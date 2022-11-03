@@ -9,6 +9,6 @@ As ferramentas a seguir estão sendo utilizadas no projeto:
 # Rodar aplicação
 ```bash
 npm run dev
-'''
+```
 
 Ver a aplicação: https://calculadora-morphism.vercel.app/ 
