@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 18px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    width: 256px;
+    text-align: center;
+    border-radius: 8px;
+    background: #e0e0e018;
+    box-shadow:  6px 11px 22px #b5b5b586,
+             -11px -11px 22px #ffffff;
+    padding: 15px;
+}
+
+.keypad{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(60px, auto);
+}
+
+input[type="text"]{
+    height: 75px;
+    width: 250px;
+    background-color: #e0e0e069;
+    border: 0px;
+    text-align: right;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 8px;
+}
+
+#clear{
+    grid-column: 1/3;
+}
+
+#result{
+    grid-column: 3/5;
+}
+
+button{
+    margin: 5px;
+    border: 0px;
+    border-radius: 6px;
+    background: #e0e0e05b;
+    box-shadow:  4px 4px 14px #c3c3c3bd,
+             -5px -5px 14px #fdfdfd;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+button:hover{
+    background: #e0e0e0e1;
+    font-weight: 400;
+    background: #e0e0e0;
+    box-shadow:  5px 5px 12px #848484,
+             -5px -5px 14px #ffffff;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active{
+    outline: none;
+}
